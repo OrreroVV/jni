@@ -1,0 +1,6 @@
+bin/*
+build/
+lib/*
+logs/*
+script/input/*
+script/output/*
