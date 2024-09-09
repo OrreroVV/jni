@@ -1,6 +1,7 @@
 bin/*
-build/
+build/*
 lib/*
 logs/*
 script/input/*
 script/output/*
+.vscode
