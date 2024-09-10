@@ -5,3 +5,4 @@ logs/*
 script/input/*
 script/output/*
 .vscode
+3rd/*

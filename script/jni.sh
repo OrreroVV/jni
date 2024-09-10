@@ -1,14 +1,13 @@
 #!/bin/bash
 # 设置项目的路径
 PROJECT_DIR=$(pwd)/..
-JAVA_SRC=Demo  # 替换为你的 Java 文件名
+JAVA_SRC=Demo
 CLASS_DIR=$PROJECT_DIR/lib/java
 
-# 检查是否传入了 -h 参数
-if [[ "$1" == "-h" ]]; then
-    echo "执行 -h 模式：只编译 Java 文件并生成头文件，不生成.so文件和运行Java程序"
-    javac -d $CLASS_DIR -h $PROJECT_DIR/code/ $PROJECT_DIR/code/java/$JAVA_SRC.java
 
+javac -h $PROJECT_DIR/code -d $CLASS_DIR  $PROJECT_DIR/code/java/$JAVA_SRC.java
+
+if [[ "$1" == "-h" ]]; then
     exit 0
 fi
 
